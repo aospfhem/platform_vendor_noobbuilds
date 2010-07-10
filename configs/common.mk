@@ -36,6 +36,11 @@ endif
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
     
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/noobbuilds/prebuilts/bin/sysinit:system/bin/sysinit \
+    vendor/noobbuilds/prebuilts/root/init.noob.rc:root/init.noob.rc    
+    
 # Add stock bootanimation 
 -include vendor/noobbuilds/configs/bootani.mk
 
