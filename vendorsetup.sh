@@ -1,0 +1,3 @@
+add_lunch_combo noobbuilds_n6-userdebug
+add_lunch_combo noobbuilds_n6p-userdebug
+add_lunch_combo noobbuilds_n9-userdebug
