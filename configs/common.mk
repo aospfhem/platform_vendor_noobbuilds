@@ -30,6 +30,12 @@ PRODUCT_PACKAGES += \
 # Enable sip+voip on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+    
+# Bootanimation (add if it exists)
+ifneq ($(wildcard vendor/noobbuilds/prebuilts/media/$(TARGET_DEVICE).zip),)
+PRODUCT_COPY_FILES += \
+        vendor/noobbuilds/prebuilts/media/$(TARGET_DEVICE).zip:system/media/bootanimation.zip
+endif
 
-# Add finerprints
--inlude vendor/noobbuilda/configs/noob_fingerprints.mk
+# Add fingerprints
+-include vendor/noobbuilds/configs/noob_fingerprints.mk
