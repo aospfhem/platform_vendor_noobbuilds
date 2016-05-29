@@ -42,5 +42,6 @@
     <!-- Set defaults for Google Services -->
     <string name="config_appsAuthorizedForSharedAccounts">;com.android.vending;com.android.settings;</string>
     <string name="config_persistentDataPackageName">com.google.android.gms</string>
+    <string name="config_webViewPackageName">com.google.android.webview</string>
              
 </resources>
