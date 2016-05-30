@@ -25,7 +25,14 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/noobbuilds/overlays/common
 
 # Needed Packages
 PRODUCT_PACKAGES += \
-    Launcher3 
+    Launcher3
+    
+# Blobs for media effects -- no vendor partition devices
+ifneq ($(filter noobbuilds_n6,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    $(LOCAL_PATH)/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+endif    
 
 # Enable sip+voip on all targets
 PRODUCT_COPY_FILES += \
