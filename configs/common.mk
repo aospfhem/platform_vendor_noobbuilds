@@ -1,7 +1,5 @@
-# Brand
-PRODUCT_NAME := noobbuilds
-PRODUCT_BRAND := noobbuilds
-PRODUCT_DEVICE := generic
+# Noobbuilds common make file
+
 
 # Local path for prebuilts
 LOCAL_PATH:= vendor/noobbuilds/prebuilts
