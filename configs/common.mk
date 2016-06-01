@@ -41,8 +41,12 @@ PRODUCT_COPY_FILES += \
     
 # init.d script support
 PRODUCT_COPY_FILES += \
-    vendor/noobbuilds/prebuilts/bin/sysinit:system/bin/sysinit \
-    vendor/noobbuilds/prebuilts/root/init.noob.rc:root/init.noob.rc
+    $(LOCAL_PATH)/bin/sysinit:system/bin/sysinit \
+    $(LOCAL_PATH)/root/init.noob.rc:root/init.noob.rc
+
+# Add SuperSU
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/addon.d/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip
     
 # Add noobbuilds sounds
 -include vendor/noobbuilds/configs/noob_sounds.mk
