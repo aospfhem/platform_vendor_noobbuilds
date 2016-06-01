@@ -39,7 +39,10 @@ PRODUCT_COPY_FILES += \
 # init.d script support
 PRODUCT_COPY_FILES += \
     vendor/noobbuilds/prebuilts/bin/sysinit:system/bin/sysinit \
-    vendor/noobbuilds/prebuilts/root/init.noob.rc:root/init.noob.rc    
+    vendor/noobbuilds/prebuilts/root/init.noob.rc:root/init.noob.rc
+    
+# Add noobbuilds sounds
+-inlude vendor/noobbuilds/configs/noob_sounds.mk
     
 # Add stock bootanimation 
 -include vendor/noobbuilds/configs/bootani.mk
