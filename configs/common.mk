@@ -42,7 +42,7 @@ PRODUCT_COPY_FILES += \
     vendor/noobbuilds/prebuilts/root/init.noob.rc:root/init.noob.rc
     
 # Add noobbuilds sounds
--inlude vendor/noobbuilds/configs/noob_sounds.mk
+-include vendor/noobbuilds/configs/noob_sounds.mk
     
 # Add stock bootanimation 
 -include vendor/noobbuilds/configs/bootani.mk
