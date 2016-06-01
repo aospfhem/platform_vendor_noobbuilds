@@ -25,7 +25,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/noobbuilds/overlays/common
 PRODUCT_PACKAGES += \
     Launcher3 \
     PrebuiltExchange3Google \
-    KernelAdiutor
+    KernelAdiutor \
+    AdAway
     
 # Blobs for media effects -- no vendor partition devices
 ifneq ($(filter noobbuilds_n6,$(TARGET_PRODUCT)),)
